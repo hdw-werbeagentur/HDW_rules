@@ -6,7 +6,8 @@
             "always",
             {
                 "except": [
-                    "first-nested"
+                    "first-nested",
+                    "after-comment"
                 ],
                 "ignore": [
                     "after-comment",
@@ -38,6 +39,7 @@
                 "severity": "warning"
             }
         ],
+        
         "font-family-name-quotes": "always-unless-keyword",
         "font-family-no-duplicate-names": true,
         "font-family-no-missing-generic-family-keyword": true,
@@ -102,7 +104,9 @@
                 "severity": "warning"
             }
         ],
-        "rule-empty-line-before": "always",
+        "rule-empty-line-before": ["always", {
+            "ignore": ["after-comment"],
+        }],
         "selector-attribute-brackets-space-inside": "never",
         "selector-attribute-operator-space-after": "never",
         "selector-attribute-operator-space-before": "never",
