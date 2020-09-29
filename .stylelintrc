@@ -28,7 +28,7 @@
         "declaration-block-single-line-max-declarations": 1,
         "declaration-block-trailing-semicolon": "always",
         "declaration-colon-newline-after": "always-multi-line",
-        "declaration-colon-space-after": "always",
+        "declaration-colon-space-after": "always-single-line",
         "declaration-colon-space-before": "never",
         "declaration-empty-line-before": "never",
         "declaration-no-important": [
@@ -37,19 +37,7 @@
                 "severity": "warning"
             }
         ],
-        "declaration-property-unit-allowed-list": {
-            "font-size": [
-                "em",
-                "rem"
-            ]
-        },
-        "declaration-property-unit-disallowed-list": {
-            "line-height": [
-                "px",
-                "rem",
-                "em"
-            ]
-        },
+        
         "font-family-name-quotes": "always-unless-keyword",
         "font-family-no-duplicate-names": true,
         "font-family-no-missing-generic-family-keyword": true,
@@ -74,18 +62,16 @@
         "max-nesting-depth": [
             3,
             {
+                "severity": "warning",
                 "ignore": [
-                    "pseudo-classes"
+                    "pseudo-classes",
+                    "blockless-at-rules"
                 ],
                 "ignoreAtRules": [
                     "each",
                     "media",
                     "supports",
                     "include",
-                    [
-                        "/nav/",
-                        "/menu/"
-                    ]
                 ]
             }
         ],
@@ -159,7 +145,11 @@
         "string-quotes": "double",
         "unit-case": "lower",
         "unit-no-unknown": true,
-        "value-keyword-case": "lower",
+        "value-keyword-case": [
+          "lower",{
+            "ignoreProperties": ['/^font/']
+          }
+        ],
         "value-list-comma-newline-after": "always-multi-line",
         "value-list-comma-newline-before": "never-multi-line",
         "value-list-comma-space-after": "always-single-line",
