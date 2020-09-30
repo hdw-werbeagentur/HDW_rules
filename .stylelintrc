@@ -6,8 +6,7 @@
             "always",
             {
                 "except": [
-                    "first-nested",
-                    "after-comment"
+                    "first-nested"
                 ],
                 "ignore": [
                     "after-comment",
