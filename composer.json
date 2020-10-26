@@ -1,0 +1,21 @@
+{
+    "name": "hdw-werbeagentur/hdw-rules",
+    "description": "All kind of lintings needed for HDW Projects",
+    "type": "editor-config",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Spross",
+            "email": "a.spross@hdw1.de"
+        },
+        {
+            "name": "Tobias Feld",
+            "email": "t.feld@hdw1.de"
+        },
+        {
+            "name": "Ralf Hortt",
+            "email": "r.hortt@hdw1.de"
+        }
+    ],
+    "require": {}
+}
